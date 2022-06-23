@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.board {
+  display: grid;
+  box-shadow: 0px 1px 8px -1px rgba(0, 0, 0, 0.2), 0px 3px 24px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cell, .alive-cell {
+  border-width: 1px;
+  border-color: rgb(148, 163, 184);
+  border-style: solid;
+}
+
+.alive-cell {
+  background-color: black;
+}
+
+.controls-container {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.control {
+  box-shadow: #0062e3 0 0 3px;
+  border-width: 1px;
+  border-color: grey;
+  width: 160px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  transition: 150ms;
+  background-color: transparent;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.control:hover {
+  transition: 150ms;
+  color: #0062e3;
+  box-shadow: #0062e3 0 0 6px;
+}
+
+.control + .control {
+  margin-left: 1rem;
+}
+
+.board-size-input-container {
+  box-shadow: 0px 1px 8px -1px rgba(0, 0, 0, 0.2), 0px 3px 24px -2px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  width: 512px;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.board-size-label {
+  display: block;
+  font-size: 1.15rem;
+}
+
+.board-size-input {
+  width: 75%;
+  height: 6px;
+  background-color: rgb(209, 213, 219);
+  cursor: pointer;
+  margin-top: 1rem;
+  appearance: none;
+  border-radius: 3px;
+}
